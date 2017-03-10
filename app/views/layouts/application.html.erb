@@ -5,12 +5,13 @@
     <title><%= content_for?(:title) ? yield(:title) : "Myapp" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Myapp" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
   <body>
     <header>
-      <%= render 'layouts/navigation' %>
+      <%= link_to "company", company_index_path %>
+      <%= link_to "prospect", prospect_index_path %>
     </header>
     <main role="main">
        <%= render 'layouts/messages' %>

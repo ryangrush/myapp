@@ -19,4 +19,7 @@ gem 'pg'
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
+  gem 'pry-byebug'
 end
+gem 'react-rails'
+gem 'awesome_print'
